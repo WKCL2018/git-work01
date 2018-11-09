@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>fayzhoublog</title>
+		<style style="text/css">
+			/*首部*/
+			.header0{
+				width:1500px;
+				height:150px;
+				background-color:lightseagreen;}
+			/*首上，前半部分*/
+			.h01{
+				width:400px;
+				height:150px;
+				line-height: 150px;
+				color:white;
+				font-size:50px;
+				font-family: "微软雅黑";
+				position:relative;
+				left:300px;
+				font-weight:lighter;
+				transition: all 0.4s linear;}
+			.header0:hover .h01{
+				position:relative;
+				left:262px;
+				letter-spacing: 15px;}
+			/*首上，后半部分*/
+			.h02{
+				width:500px;
+				height:150px;
+				line-height: 150px;
+				color:white;
+				font-size:24px;
+				font-family: "微软雅黑";
+				position:relative;
+				left:520px;
+				top:-140px;
+				font-weight:lighter;
+				transition: all 0.4s linear;}
+			.header0:hover .h02{
+				position:relative;
+				left:535px;
+				opacity:0;}
+			
+			/*首下部分*/
+			.h11{
+				width:1500px;
+				height:60px;
+				background-color: slategray;}
+			.h11 div{position:relative;
+				left:150px;
+				width:100px;
+				height:60px;
+				float:left;
+				font-size:18px;
+				text-align: center;
+				line-height: 60px;
+				font-family: "微软雅黑";}
+			.h11 div:hover{background: lightseagreen;}
+			
+			.h12{position:relative;
+				margin-left:415px;
+				top:0px;}
+			/*资源选项下二级菜单*/
+			.h1150 div{width:150px;
+				height:50px;
+				background: lightseagreen;}
+			.h1150{display:none;}
+			.h115:hover .h1150{position:relative;
+				   			   left:-150px;
+							   display:block;
+							   opacity: 0.7;
+							   z-index: 999;}
+			/*其他选项下二级菜单*/
+			.h1160 div{
+				width:120px;
+				height:50px;
+				background:lightseagreen;}
+			.h1160{position:relative;
+				   left:-300px;
+				   display:none;}
+			.h116:hover .h1160{position:relative;
+				   			   left:-150px;
+							   display:block;
+							   opacity: 0.7;
+							   z-index: 999;}
+			/*主体，基本设置*/
+			.main{width:1500px;
+				height:2300px;
+				background:lightgray;
+				position:relative;
+				left:0px;}
+			/*体上，横白条框*/
+			.h117{width:1200px;
+				height:50px;
+				background:white;
+				position: relative;
+				left:150px;
+				top:0px;}
+			
+			.find{width: 40px;
+				position: relative;
+				left:510px;
+				/*display:none*/}
+
+			.find input{
+				height:40px;
+				position: relative;
+				top: 2px;
+				left: 455px;
+				}
+			/*.h12:hover .find{
+				display:block}*/
+				
+			.h13{position: relative;
+				 top:-40px;
+				 font-size:28px;}
+			/**/
+			.h14{margin-top: 5px;
+				margin-left: 145px;
+				height: 295px;
+				width: 130px;
+				overflow: hidden;
+				float: left;}
+			
+			.ll0 {margin-top: 11px;
+				height: 295px;
+				width: 120px;}
+			.ll0 div {opacity: 0.6;}
+			.ll0 div:hover{transform: translateY(-2px);
+				opacity: 1;}
+			
+			.pp {margin-top: 15px;
+				 height: 285px;
+				 width: 720px;
+				 overflow: hidden;}
+			
+			.pp1{height: 1200px;
+				 width: 1111px;}
+			
+			.f1 {animation: ani1 8s linear infinite;}
+			.f2	{animation: ani1 8s linear infinite;}
+			.f3	{animation: ani1 8s linear infinite;}
+			.f4	{animation: ani1 8s linear infinite;}
+			@keyframes ani1 {from{transform: translateY(0px);}
+							 to{transform: translateY(-600px);}}
+		
+			.qq{height: 45px;
+				width: 330px;
+				background: white;
+				position:relative;
+				line-height: 45px;
+				text-align: center;
+				top: -280px;
+				left: 1020px;}
+			.qq img{float: left;
+				margin-top: 5px;
+				margin-left: 18px;}
+			
+			.mail{height: 160px;
+				width: 330px;
+				background: white;
+				position: relative;
+				top: -285px;
+				left: 1020px;}
+			.mail div {margin-top: 20px;
+				margin-left: 10px;}
+			.mail a:hover {opacity: 0.7;}
+			.mail2 {border: 0.5px solid lightseagreen;}
+			
+			.menm{height: 200px;
+				width: 330px;
+				background: white;
+				position: absolute;
+				top: 310px;
+				right: 150px;
+				color: lightseagreen;}
+			.menm a{color: lightseagreen;
+				text-decoration: none;}
+			.menm a:hover {color: black;}
+			.menm div{margin-top: 20px;
+				margin-left: 15px;}
+			
+			.tips{height: 350px;
+				width: 330px;
+				background: white;
+				position: absolute;
+				top: 530px;
+				right: 150px;
+				color: lightseagreen;}
+			.tips div{margin-top:20px;
+				margin-left:15px;
+				opacity:0.8;}
+			.tips div:hover{opacity: 1;}
+			.tips a{color: white;
+					text-decoration: none;}
+			
+			.article{height: 320px;
+				width: 330px;
+				background: white;
+				position: absolute;
+				top: 900px;
+				right: 150px;
+				color: lightseagreen;}
+			.article div {margin-top: 20px;
+				margin-left: 15px;}
+			.article a {text-decoration: none;
+				color: lightseagreen;}
+			.article a:hover {color: black;}
+			
+			.hotspot {height: 520px;
+				width: 330px;
+				background: white;
+				position: absolute;
+				top: 1240px;
+				right: 150px;
+				color: lightseagreen;}
+			.hotspot div {margin-top: 20px;
+				margin-left: 15px;}
+			.hotspot a {color: lightseagreen;
+				text-decoration: none;}
+			.hotspot a:hover{color: red;}
+			
+			.reader {
+				height: 80px;
+				width: 330px;
+				background: white;
+				position: absolute;
+				top: 1785px;
+				right: 150px;
+				color: lightseagreen;}
+			
+			.reader div {
+				margin-top: 20px;
+				margin-left: 15px;}
+			
+			.complain {
+				height: 300px;
+				width: 330px;
+				background: white;
+				position: absolute;
+				top: 1890px;
+				right: 150px;
+				color: lightseagreen;}
+			
+			.complain div {
+				margin-top: 20px;
+				margin-left: 15px;}
+			
+			.ar1 {height: 200px;
+				width: 845px;
+				background: white;
+				position: relative;
+				top: -200px;
+				left: 147px;
+				color: lightseagreen;
+				z-index: 999;}
+				
+			.ar1 div{margin-left: 15px;
+				margin-top: 5px;}
+			.ar1 a {color: lightseagreen;
+				text-decoration: none;}
+			.ar1 a:hover {color: black;}
+			.ar1 img {transition: all 2s linear;}
+			.ar1 img:hover {transform: scale(1.2);}
+			.ar1 span {margin-left: 12px;}
+			
+			.ar2 {height: 200px;
+				width: 845px;
+				background: white;
+				position: relative;
+				top: -170px;
+				left: 147px;
+				color: lightseagreen;}
+			.ar2 div {margin-left: 15px;
+				margin-top: 5px;}
+			.ar2 a {color: lightseagreen;
+				text-decoration: none;}
+			.ar2 a:hover {color: black;}			
+			.ar2 img {transition: all 2s linear;}			
+			.ar2 img:hover {transform: scale(1.2);}			
+			.ar2 span {margin-left: 12px;}
+			
+			.ar3 {height: 200px;
+				width: 850px;
+				background: white;
+				position: relative;
+				top: -140px;
+				left: 147px;
+				color: lightseagreen;}
+			.ar3 div{margin-left: 15px;
+				margin-top: 5px;}			
+			.ar3 a{color: lightseagreen;
+				text-decoration: none;}			
+			.ar3 a:hover{color: black;}			
+			.ar3 img{transition: all 2s linear;}			
+			.ar3 img:hover{transform: scale(1.2);}			
+			.ar3 span {margin-left: 12px;}
+			
+			.ar4 {height: 200px;
+				width: 845px;
+				background: white;
+				position: relative;
+				top: -110px;
+				left: 147px;
+				color: lightseagreen;}
+			.ar4 div{margin-left: 15px;
+				margin-top: 5px;}			
+			.ar4 a{color: lightseagreen;
+				text-decoration: none;}
+			.ar4 a:hover{color: black;}			
+			.ar4 img{transition: all 2s linear;}			
+			.ar4 img:hover{transform: scale(1.2);}
+			.ar4 span{margin-left: 12px;}
+		
+			.ar5 {height: 200px;
+				width: 845px;
+				background: white;
+				position: relative;
+				top: -80px;
+				left: 147px;
+				color: lightseagreen;}
+			.ar5 div {margin-left: 15px;
+				margin-top: 5px;}
+			.ar5 a {color: lightseagreen;
+				text-decoration: none;}
+			.ar5 a:hover {color: black;}
+			.ar5 img {transition: all 2s linear;}
+			.ar5 img:hover {transform: scale(1.2);}
+			.ar5 span {margin-left: 12px;}
+			
+			
+			
+			.ye1 {
+				height: 150px;
+				width: 845px;
+				background: white;
+				position: relative;
+				bottom: 30px;
+				left: 147px;
+				color: lightseagreen;
+				line-height: 50px;
+				text-align: center;
+				line-height: 5px;}
+			.ye1 div {display: inline-block;
+				position: relative;
+				bottom: -30px;
+				left: 0px;
+				width: 60px;
+				height: 60px;
+				background: gainsboro;
+				margin-top: 10px;
+				line-height: 60px;
+				font-size: 24px;}
+			.ye1 a {text-decoration: none;
+				color: black;}
+			.ye1 div:hover {
+				background: lightseagreen;}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header0">
+				<div class="h01">飞舟博客</div>
+				<div class="h02">-关注Web前端发展，分享办公软件使用心得。</div>
+			</div>
+			<div class="header1">
+				<div class="h11">
+					<div style="background: lightseagreen;">首页</div>
+					<div>咨询</div>
+					<div>Web前端</div>
+					<div>office</div>
+					<div>计算机</div>
+					<div class="h115">资源
+						<div class="h1150">
+							<div>网站模板</div>
+							<div>网页插件</div>
+							<div>图片图标</div>
+							<div>软件</div>
+							<div>其他</div>
+						</div>
+					</div>
+					<div style="background: lightseagreen;"  class="h116";>其他
+						<div class="h1160">
+							<div>文章存档</div>
+							<div>标签云</div>
+							<div>投稿</div>
+							<div>留言板</div>
+							<div>友情链接</div>
+						</div>
+					</div>
+					<div class="h12" href="#"><img src='/html01/hwhcproject/微信图片_20181106170523.png'></div>
+				</div>
+				
+			</div>
+		</header>
+		
+		<main class="main">
+			<div class="h117">
+				<div class="find">
+					<input type="text"/>
+				</div>
+				<div class="h13">
+					<img src="../hwhcproject/blogs/broadcast.jpg" />
+					<span style="font-size: 20px;">飞舟博客改版，新增web前端开发知识</span>
+				</div>
+			</div>
+
+		<div class="h14">
+			<div class="ll0">
+				<div class="ll1" style="margin-top: 0px;margin-left: 5px;">
+					<a href="#"><img src='../hwhcproject/blog/banner/timthumb.jpg' /></a>
+				</div>
+
+				<div class="" style="margin-top: 6px;margin-left: 0px;">
+					<a href="#"><img src='../hwhcproject/blogs1/ppt2.jpg' /></a>
+				</div>
+
+				<div class="" style="margin-top: 6px;margin-left: 5px;">
+					<a href="#"><img src='../hwhcproject/blog/banner/timthumb1.jpg' /></a>
+				</div>
+
+				<div class="ll4" style="margin-top: 6px;margin-left:0px;">
+					<a href="#"><img src='../hwhcproject/blogs1/ppt4.jpg' /></a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="pp">
+			<div class="pp1">
+				<div class="f1"><img src='../hwhcproject/blog/banner/banner4.jpg' /></div>
+				<div class="f2"><img src="../hwhcproject/blog/banner/banner3.jpg" /></div>
+				<div class="f3"><img src="../hwhcproject/blog/banner/banner1.jpg" /></div>
+				<div class="f4"><img src="../hwhcproject/blog/banner/banner2.jpg"/> </div>
+			</div>
+
+		</div>
+
+				</div>
+				<div class="qq">
+					<a  title="新浪微博"><img src='../hwhcproject/blogs1/weibo.jpg' /></a>
+					<a href="" title="腾讯微博"><img src='../hwhcproject/blogs1/QQweibo.jpg' /></a>
+					<a href="" title='微信扫描飞舟博客官方订阅号二维码“飞舟学府”时实获取最新文章' <img src="../hwhcproject/blog/weixin.gif">
+					<img src='../hwhcproject/blogs1/weixin.jpg' /></a>
+					<a href="" title="Email"><img src='../hwhcproject/blogs1/youxiang.jpg' /></a>
+					<a href="" title="联系qq"><img src='../hwhcproject/blogs1/QQ.jpg' /></a>
+			
+					<a href="" title="订阅本站"><img src='../hwhcproject/blogs1/shoucang.jpg' /></a>
+
+					
+				</div>
+
+				<div class="mail">
+					<div style="color: lightseagreen;">邮箱订阅</div>
+
+					<div class="mail2"></div>
+					<div>填写您的邮件地址，订阅更多的精彩内容：</div>
+					<div><input type="text" value="your@email.com" />
+						<a href="#" style="text-decoration: none;height: 40px;width: 80px;background: lightseagreen;color: white;">
+							订阅</a>
+					</div>
+				</div>
+
+				<div class="menm">
+					<div>分类目录</div>
+					<div style="border: 0.5px solid lightseagreen;"></div>
+					<div class="menm1">
+						<div>
+							<a href="#" >office</a>
+							<a href="#" style="margin-left: 100px;">Web前端</a>
+						</div>
+						<div>
+							<a href="#" style="">其他</a>
+							<a href="#" style="margin-left: 110px;">图片图标</a>
+						</div>
+						<div>
+							<a href="#" style="">计算机</a>
+							<a href="#" style="margin-left: 95px;">软件</a>
+						</div>
+
+					</div>
+
+				</div>
+				
+				<div class="tips">
+					<div>标签云</div>
+					<div style="border: 0.5px solid lightseagreen;"></div>
+					
+					<div >
+						<div style="height: 25px;width: 130px;background: lightseagreen;float: left;">
+						<a href=""  title="25个话题">office(25)</a>
+						</div>
+						<div style="height: 25px;width: 130px;background: green;float: left;">
+							<a href="#"  title="20个话题">ppt(20)</a>
+						</div>
+					</div>
+					
+					<div >
+						<div style="height: 25px;width: 130px;background: red;float: left;">
+						<a href="#"  title="17个话题">计算机(17)</a>
+						</div>
+						<div style="height: 25px;width: 130px;background: cadetblue;float: left;">
+							<a href="#"  title="10个话题">资源搜索(10)</a>
+						</div>
+					</div>
+					
+					<div >
+						<div style="height: 25px;width: 130px;background: darkmagenta;float: left;">
+						<a href="#"  title="9个话题">网络安全(9)</a>
+						</div>
+						<div style="height: 25px;width: 130px;background: green;float: left;">
+							<a href="#"  title="6个话题">excel(6)</a>
+						</div>
+					</div>
+					
+					<div >
+						<div style="height: 25px;width: 130px;background: goldenrod;float: left;">
+						<a href="#"  title="6个话题">图片资源(6)</a>
+						</div>
+						<div style="height: 25px;width: 130px;background:orange;float: left;">
+							<a href="#"  title="5个话题">word(5)</a>
+						</div>
+					</div>
+					
+					<div >
+						<div style="height: 25px;width: 130px;background: gray;float: left;">
+						<a href="#"  title="4个话题">互联网(4)</a>
+						</div>
+						<div style="height: 25px;width: 130px;background: lightseagreen;float: left;">
+							<a href="#"  title="3个话题">网络(3)</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="article">
+					<div>近期文章</div>
+					<div style="border: 0.5px solid lightseagreen;"></div>
+					<div style="height: 25px;border-bottom: 0.5px solid gainsboro;">
+						<a href="">meta标签全解</a>
+						
+					</div>
+					<div style="height: 25px;border-bottom: 0.5px solid gainsboro;">
+						<a href="">PowerPoint里面无法进行中文输入，原因为何？</a>
+					</div>
+					<div style="height: 25px;border-bottom: 0.5px solid gainsboro;">
+						<a href="">萌妹子必备：180+超可爱的PNG素材</a>
+					</div>
+					<div style="height: 25px;border-bottom: 0.5px solid gainsboro;">
+						<a href="">如何在PPT中设置移动鼠标出现标注文字？</a>
+					</div>
+					<div style="height: 25px;border-bottom: 0.5px solid gainsboro;">
+						<a href="">同名文件被替换覆盖后可以恢复吗？</a>
+					</div>
+				</div>
+				
+				<div class="hotspot">
+					<div>时事热门</div>
+					<div style="border: 0.5px solid lightseagreen;"></div>
+					<div><a href="" >简单四步即可处理好PPT背景音乐和视频的冲突</a></div>
+					<div class="hotday"> 2015-11-11 2评论</div>
+					<div ><a href="" >如果高速有效的利用搜索引擎寻找需要的资料</a></div>
+					<div class="hotday"> 2016-01-03 </div>
+					<div><a href="" >Inter Download Manger(IDM)下载器</a></div>
+					<div class="hotday"> 2015-12-22 </div>
+					<div><a href="" >网页音频下载方法之————IDM下载器</a></div>
+					<div class="hotday"> 2015-12-22 </div>
+					<div><a href="" >网页音频下载方法之————开发人员工具</a></div>
+					<div class="hotday"> 2015-12-18 </div>
+				</div>
+				
+				<div class="reader">
+					<div>活跃读者</div>
+					<div style="border: 0.5px solid lightseagreen;"></div>
+					
+				</div>
+				
+				<div class="complain">
+					<div>最新吐槽</div>
+					<div style="border: 0.5px solid lightseagreen;"></div>
+					<div style="float: left;">
+					<div style="height: 40px;width: 50px;background: gray;line-height: 50px;text-align: center;">
+						<img src="../hwhcproject/transion1/s.png"/>
+						<div style="border: 0.5px solid gainsboro;height: 60px;width: 250px;margin-left: 20px;">
+							<a href="" style="text-decoration: none;color: black;">飞舟3年前（2015-11-17）说：谢谢额！</a>
+							
+						</div>
+					</div>
+					</div>	
+				</div>
+				
+				
+		<div class="ar1">
+			<div><span style="height: 30px;width:80px; background: red;text-align: center;line-height: 30px;">
+        	<a href="" style="color: white;">	Web前端	</a> </span>
+        	 <span style="font-size: 20px;">
+        	 	<a href="" style="color: lightseagreen;">meta标签全解</a>
+        	
+        	 </span>
+        	</div>
+        	
+        	 	
+        	 <div style="height:125px;width: 200px ;overflow:hidden;float: left;margin-left: 25px;">
+				<img src="../hwhcproject/blogs1/timthumb (6).jpg" /></div>
+				
+			<div style="margin-left: 250px;margin-top: 5px;color:black;">前两天一同事找我，说他辛辛苦苦写的计划被一个同名文件给覆盖了，想死的心都有了，
+					问我有没有办法恢复被覆盖的文件？ 也许很多朋友都有遇到过这种情况，当时除了懊恼，
+					烦躁，恨自己怎么那么手快，点击了确认覆盖。
+					所以就只能再苦逼的重做。 NO NO NO！ 其实事情还是可以有回转的余地的，为...</div>
+			<div style="margin-left: 255px;margin-top: 40px;">
+				<span><img src="../hwhcproject/blogs/login.jpg"/>
+			<a href="" >faychou1989</a></span>
+				<span style="color: black;"><img src='../hwhcproject/blogs1/shizhong.png'/>2年前（2016-07-07）
+			</span>
+			
+			<span style="color: black;"><img src="../hwhcproject/blogs1/eyes.png">5649°C</span>
+			<span style="color: black;"><img src='../hwhcproject/blogs1/qipao.png'>
+			<a href="" >0评论</a></span>
+			<span style="color: red;"><img src='../hwhcproject/blogs1/xin.png'>91喜欢</span>
+			</div>
+		</div>
+		
+		
+		
+		<div class="ar2">
+			<div><span style="height: 30px;width:80px; background: red;text-align: center;line-height: 30px;">
+        	<a href="" style="color: white;">	office	</a> </span>
+        	 <span style="font-size: 20px;">
+        	 	<a href="" style="color: lightseagreen;">PowerPoint里面无法进行中文输入，原因为何？</a>
+        	 </span>
+        	</div>
+        	
+        	<div style="height:125px;width: 200px ;overflow:hidden;float: left;margin-left: 25px;">
+				<img src="../hwhcproject/blogs/timthumb.jpg" /></div>
+				
+			<div style="margin-left: 250px;margin-top: 5px;color:black;">前两天一同事找我，说他辛辛苦苦写的计划被一个同名文件给覆盖了，想死的心都有了，
+					问我有没有办法恢复被覆盖的文件？ 也许很多朋友都有遇到过这种情况，当时除了懊恼，
+					烦躁，恨自己怎么那么手快，点击了确认覆盖。
+					所以就只能再苦逼的重做。 NO NO NO！ 其实事情还是可以有回转的余地的，为...</div>
+			<div style="margin-left: 255px;margin-top: 40px;">
+				<span><img src="../hwhcproject/blogs/login.jpg"/>
+			<a href="" >faychou1989</a></span>
+				<span style="color: black;"><img src='../hwhcproject/blogs1/shizhong.png'/>2年前（2016-07-07）
+			</span>
+			
+			<span style="color: black;"><img src="../hwhcproject/blogs1/eyes.png">5649°C</span>
+			<span style="color: black;"><img src='../hwhcproject/blogs1/qipao.png'>
+			<a href="" >0评论</a></span>
+			<span style="color: red;"><img src='../hwhcproject/blogs1/xin.png'>91喜欢</span>
+			</div>
+			
+			
+		</div>
+		
+		
+		
+		<div class="ar3">
+			<div><span style="height: 30px;width:80px; background: red;text-align: center;line-height: 30px;">
+        	<a href="" style="color: white;">	Web前端	</a> </span>
+        	 <span style="font-size: 20px;">
+        	 	<a href="" style="color: lightseagreen;">meta标签全解</a>
+        	
+        	 </span>
+        	</div>
+        	
+        	 	
+        	 <div style="height:125px;width: 200px ;overflow:hidden;float: left;margin-left: 25px;">
+				<img src="../hwhcproject/blog/list1.jpg" /></div>
+				
+			<div style="margin-left: 250px;margin-top: 5px;color:black;">前两天一同事找我，说他辛辛苦苦写的计划被一个同名文件给覆盖了，想死的心都有了，
+					问我有没有办法恢复被覆盖的文件？ 也许很多朋友都有遇到过这种情况，当时除了懊恼，
+					烦躁，恨自己怎么那么手快，点击了确认覆盖。
+					所以就只能再苦逼的重做。 NO NO NO！ 其实事情还是可以有回转的余地的，为...</div>
+				<div style="margin-left: 255px;margin-top: 40px;">
+				<span><img src="../hwhcproject/blogs/login.jpg"/>
+			<a href="" >faychou1989</a></span>
+				<span style="color: black;"><img src='../hwhcproject/blogs1/shizhong.png'/>2年前（2016-07-07）
+			</span>
+			
+			<span style="color: black;"><img src="../hwhcproject/blogs1/eyes.png">5649°C</span>
+			<span style="color: black;"><img src='../hwhcproject/blogs1/qipao.png'>
+			<a href="" >0评论</a></span>
+			<span style="color: red;"><img src='../hwhcproject/blogs1/xin.png'>91喜欢</span>
+			</div>
+			
+			
+		</div>
+		
+		
+		<div class="ar4">
+			<div><span style="height: 30px;width:80px; background: red;text-align: center;line-height: 30px;">
+        	<a href="" style="color: white;">	Web前端	</a> </span>
+        	 <span style="font-size: 20px;">
+        	 	<a href="" style="color: lightseagreen;">meta标签全解</a>
+        	
+        	 </span>
+        	</div>
+        	
+        	 	
+        	 <div style="height:125px;width: 200px ;overflow:hidden;float: left;margin-left: 25px;">
+				<img src="../hwhcproject/blogs1/lefttupian1.png" /></div>
+				
+			<div style="margin-left: 250px;margin-top: 5px;color:black;">前两天一同事找我，说他辛辛苦苦写的计划被一个同名文件给覆盖了，想死的心都有了，
+					问我有没有办法恢复被覆盖的文件？ 也许很多朋友都有遇到过这种情况，当时除了懊恼，
+					烦躁，恨自己怎么那么手快，点击了确认覆盖。
+					所以就只能再苦逼的重做。 NO NO NO！ 其实事情还是可以有回转的余地的，为...</div>
+				<div style="margin-left: 255px;margin-top: 40px;">
+				<span><img src="../hwhcproject/blogs/login.jpg"/>
+			<a href="" >faychou1989</a></span>
+				<span style="color: black;"><img src='../hwhcproject/blogs1/shizhong.png'/>2年前（2016-07-07）
+			</span>
+			
+			<span style="color: black;"><img src="../hwhcproject/blogs1/eyes.png">5649°C</span>
+			<span style="color: black;"><img src='../hwhcproject/blogs1/qipao.png'>
+			<a href="" >0评论</a></span>
+			<span style="color: red;"><img src='../hwhcproject/blogs1/xin.png'>91喜欢</span>
+			</div>
+			
+			
+		</div>
+		
+		
+		
+			<div class="ar5">
+				<div><span style="height: 30px;width:80px; background: red;text-align: center;line-height: 30px;">
+        			<a href="" style="color: white;">Web前端</a></span>
+        	 		<span style="font-size: 20px;">
+        	 		<a href="" style="color: lightseagreen;">meta标签全解</a>
+        			</span>
+        		</div>
+        	 	<div style="height:125px;width: 200px ;overflow:hidden;float: left;margin-left: 25px;">
+					<img src="../hwhcproject/blogs1/timthumb (3).jpg" />
+        	 	</div>
+				
+				<div style="margin-left: 250px;margin-top: 5px;color:black;">前两天一同事找我，说他辛辛苦苦写的计划被一个同名文件给覆盖了，想死的心都有了，
+					问我有没有办法恢复被覆盖的文件？ 也许很多朋友都有遇到过这种情况，当时除了懊恼，
+					烦躁，恨自己怎么那么手快，点击了确认覆盖。
+					所以就只能再苦逼的重做。 NO NO NO！ 其实事情还是可以有回转的余地的，为...
+				</div>
+				<div style="margin-left: 255px;margin-top: 40px;">
+					<span><img src="../hwhcproject/blogs/login.jpg"/>
+					<a href="" >faychou1989</a></span>
+					<span style="color: black;"><img src='../hwhcproject/blogs1/shizhong.png'/>2年前（2016-07-07）</span>
+					<span style="color: black;"><img src="../hwhcproject/blogs1/eyes.png">5649°C</span>
+					<span style="color: black;"><img src='../hwhcproject/blogs1/qipao.png'>
+						<a href="" >0评论</a>
+					</span>
+					<span style="color: red;"><img src='../hwhcproject/blogs1/xin.png'>91喜欢</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="ye1">
+			<div><a href="">1</a></div>
+			<div><a href="">2</a></div>
+			<div><a href="">3</a></div>
+			<div><a href="">4</a></div>
+			<div><a href="">5</a></div>
+			<div><a href="">6</a></div>
+			<div ><a href="">下页</a></div>
+		</div>
+		
+		</main>
+	</body>
+</html>
